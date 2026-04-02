@@ -875,7 +875,7 @@ class PowerLoraLoaderWidget extends RgthreeBaseWidget<PowerLoraLoaderWidgetValue
 
   editNote() {
     const currentNote = this.value.note || "";
-    const nextNote = window.prompt("请输入这个 LoRA 的备注", currentNote);
+    const nextNote = window.prompt("Please enter the note for this LoRA.", currentNote);
     if (nextNote === null) {
       return;
     }
